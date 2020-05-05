@@ -9,10 +9,11 @@
     "start": "catsys app:serve"
   },
   "dependencies": {
-    "xamix-element": "git+ssh://git@github.com:tlenexkoyotl/xamix-element.git#v1.0.3",
+    "@polymer/paper-button": "^3.0.1",
     "@webcomponents/webcomponentsjs": "^2.4.3",
     "lit-element": "^2.3.1",
-    "@polymer/paper-button": "^3.0.1"
+    "polymer-cli": "^1.9.11",
+    "xamix-element": "git+ssh://git@github.com:tlenexkoyotl/xamix-element.git#v1.0.3"
   },
   "keywords": [
     "lit-element",
