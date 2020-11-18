@@ -70,10 +70,10 @@ class PunctuationPage extends PageDM {
                 </div>
                 <div class="container latin">
                     <div class="header">
-                        <h2>Tla'tolmacioyotl</h2>
+                        <h2>Tla'tolmachioyotl</h2>
                     </div>
                     <div class="body">
-                        <p>Axkan i'titilo noci <i>xamix</i> itla'tolmaciowan ika inenewkime' latin maciotla'tollolisko.</p>
+                        <p>Axkan i'titilo nochi <i>xamix</i> itla'tolmachiowan ika inenewkime' latin machiotla'tollolisko.</p>
                     </div>
                 </div>
                 <div class="container latin center">
@@ -105,7 +105,7 @@ class PunctuationPage extends PageDM {
                                 textInput="zi-ko-a-lis-tli 1">
                                 <span slot="after">
                                     <p><i>|,|</i></p>
-                                    <p>Zikoalistli 1, pausa (corta)</p>
+                                    <p>Tsikoalistli 1, pausa (corta)</p>
                                 </span>
                         </xamix-element>
                     </div>
@@ -123,7 +123,7 @@ class PunctuationPage extends PageDM {
                                 textInput="zi-ko-a-lis-tli 1">
                                 <span slot="after">
                                     <p><i>|;|</i></p>
-                                    <p>Zikoalistli 2, pausa (media)</p>
+                                    <p>Tsikoalistli 2, pausa (media)</p>
                                 </span>
                         </xamix-element>
                     </div>
@@ -209,7 +209,7 @@ class PunctuationPage extends PageDM {
                                 textInput="maw-ka-za-lis-tli">
                                 <span slot="after">
                                     <p><i>|!|</i></p>
-                                    <p>Mawkazalistli, exclamación</p>
+                                    <p>Mawkatsalistli, exclamación</p>
                                 </span>
                         </xamix-element>
                     </div>
@@ -279,7 +279,7 @@ class PunctuationPage extends PageDM {
                                 textInput="kax-tli _ 1 _ tel-ke-za-ki">
                                 <span slot="after">
                                     <p><i>|[ ]|</i></p>
-                                    <p>Kaxtli 1 telkezaki, contenedor 1 vertical</p>
+                                    <p>Kaxtli 1 telketsaki, contenedor 1 vertical</p>
                                 </span>
                         </xamix-element>
                     </div>
@@ -321,7 +321,7 @@ class PunctuationPage extends PageDM {
                                 textInput="kax-tli _ 2 _ tel-ke-za-ki">
                                 <span slot="after">
                                     <p><i>|( )|</i></p>
-                                    <p>Kaxtli 2 telkezaki, contenedor 2 vertical</p>
+                                    <p>Kaxtli 2 telketsaki, contenedor 2 vertical</p>
                                 </span>
                         </xamix-element>
                     </div>
@@ -365,7 +365,7 @@ class PunctuationPage extends PageDM {
                                 textInput="kax-tli _ 3 _ tel-ke-za-ki">
                                 <span slot="after">
                                     <p><i>|{ }|</i></p>
-                                    <p>Kaxtli 3 telkezaki, contenedor 2 vertical</p>
+                                    <p>Kaxtli 3 telketsaki, contenedor 2 vertical</p>
                                 </span>
                         </xamix-element>
                     </div>
