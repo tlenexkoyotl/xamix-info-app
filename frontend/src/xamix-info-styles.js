@@ -1,4 +1,4 @@
-import {css} from 'lit-element';
+import { css } from 'lit-element';
 
 export const styles = css`
 :host {
@@ -33,12 +33,29 @@ export const styles = css`
     grid-area: main;
 }
 
+.footer {
+    width: 100vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    text-align: center;
+    vertical-align: center;
+    background-color: #39245c;
+    color: #ffffff;
+}
+
+.footer>div {
+    font-size: 1.5vw;
+    text-align: center;
+    vertical-align: center;
+    color: #ffffff;
+}
+
 i {
     --xamix-italic-color: #c8a6ff;
 }
 
 li {
-    display: inline-block;
+    display: block;
     vertical-align: text-top;
     padding-bottom: 2vw;
 }
@@ -81,11 +98,14 @@ a:active {
 }
 
 .container-footer {
-    padding: 0 2vw;
+    padding: 2vw;
     box-sizing: border-box;
 }
 
 .title {
+    padding: 0;
+    padding-left: 2vw;
+    padding-right: 2vw;
     font-weight: lighter;
     font-size: --latin-font-size;
     flex: 1 auto;
@@ -107,7 +127,12 @@ a:active {
     direction: ltr;
 }
 
-.latin > div > h2, p {
+xamix-element>h2.latin {
+    font-size: 2vw;
+}
+
+.latin>div>h2,
+p {
     margin: 0;
 }
 
@@ -129,20 +154,20 @@ i {
     }
 }
 
-div.columns > div:not(.center) {
+div.columns>div:not(.center) {
     display: table-cell;
 }
 
-div.tri-set > div:not(.center) {
+div.tri-set>div:not(.center) {
     display: table-cell;
     width: 50vw;
 }
 
-div.tri-set > div:first-child {
+div.tri-set>div:first-child {
     padding-left: 1.5vw;
 }
 
-.columns > * {
+.columns>* {
     display: table-cell;
     padding-left: 1.5vw;
     width: 33vw;
@@ -152,20 +177,24 @@ xamix-element {
     font-size: 1.5vw;
 }
 
-xamix-element > div {
+xamix-element.title>h2 {
+    display: inline-block;
+}
+
+xamix-element>div {
     display: table-cell;
 }
 
-xamix-element > span {
+xamix-element>span {
     font-size: 1vw;
     vertical-align: top;
 }
 
-xamix-element > ::slotted(*) {
+xamix-element> ::slotted(*) {
     text-align: center;
 }
 
-.top > * {
+.top>* {
     vertical-align: top;
 }
 
@@ -195,26 +224,26 @@ div.cell {
     padding-left: 3vw;
 }
 
-div.cell > svg {
+div.cell>svg {
     width: 10vw;
     fill: transparent;
 }
 
-div.cell > p:nth-of-type(1) > svg {
+div.cell>p:nth-of-type(1)>svg {
     width: 13vw;
 }
 
-div.cell > p:nth-of-type(2) > svg {
+div.cell>p:nth-of-type(2)>svg {
     width: 10vw;
     fill: transparent;
 }
 
-div.cell > xamix-element > span {
+div.cell>xamix-element:not[.construction]>span {
     font-size: 1vw;
     vertical-align: top;
 }
 
-div.body.horizontal > xamix-element {
+div.body.horizontal>xamix-element {
     padding-bottom: 2vw;
 }
 
@@ -226,7 +255,7 @@ div.columns.top.body {
     max-width: 10vw;
 }
 
-div.two-columns > div {
+div.two-columns>div {
     min-width: 50vw;
 }
 
@@ -234,20 +263,20 @@ div.two-columns > div {
     text-align: justify;
 }
 
-svg:not(.space) > * {
+svg:not(.space)>* {
     stroke: #000000;
 }
 
-svg:not(.space) > mask > * {
+svg:not(.space)>mask>* {
     stroke: #ffffff;
     fill: transparent;
 }
 
-svg:not(.space) > .directions {
+svg:not(.space)>.directions {
     fill: #000000;
 }
 
-svg.space > * {
+svg.space>* {
     stroke: transparent;
 }
 
@@ -255,35 +284,124 @@ svg.space > * {
     text-align: center;
 }
 
-.examples > div > div > xamix-element > span {
+.examples>div>div>xamix-element>span {
     font-size: 4vw;
 }
 
-span.colored-xamix > svg > * {
+span.colored-xamix>svg>* {
     stroke: transparent;
 }
 
-span.colored-xamix > span {
+span.colored-xamix>span {
     vertical-align: top;
 }
 
-span.colored-xamix > span.latin {
+span.colored-xamix>span.latin {
     font-size: 4vw;
 }
 
-#phoneme-chart1 > div.row > div.cell > xamix-element > span {
+#phoneme-chart1>div.row>div.cell>xamix-element>span {
     font-size: 1.6vw;
 }
 
-#punctuation-chart1 > div.row > div.cell > xamix-element > span {
+#punctuation-chart1>div.row>div.cell>xamix-element>span {
     font-size: 1.5vw;
 }
 
-#foreign-chart1 > div.row > div.cell > * {
+#foreign-chart1>div.row>div.cell>* {
     font-size: 2vw;
 }
 
 #example1 {
     padding-bottom: 2vw;
+}
+
+table#constructionchart>tr>* {
+    border: 3px solid black;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+
+table#constructionchart>tr>td,
+table#constructionchart>tr>td>* {
+    direction: ltr;
+}
+
+#constructionchart>tr>td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #f00;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 1vw;
+}
+
+td {
+    direction: ltr;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+img {
+    width: 100%;
+}
+
+.construction {
+    font-size: 2vw;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+li>*>*>.construction {
+    font-size: 3vw;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.construction.v {
+    color: #09A38B;
+    -webkit-text-fill-color: #09A38B;
+}
+
+.construction.s {
+    color: #FDF6BD;
+    -webkit-text-fill-color: #FDF6BD;
+}
+
+.construction.a {
+    color: #217B9A;
+    -webkit-text-fill-color: #217B9A;
+}
+
+.construction.k {
+    color: #EF4F3D;
+    -webkit-text-fill-color: #EF4F3D;
+}
+
+.construction.b {
+    color: #ED45FA;
+    -webkit-text-fill-color: #ED45FA;
+}
+
+xamix-element.construction {
+    --xamix-text-stroke: #000;
+    --xamix-text-stroke-width: 3px;
+}
+
+xamix-element.construction>* {
+    font-size: 2vw;
+}
+
+.chart,.chart>*,.chart>*>*,.chart>*>*>* {
+    font-size: 2vw;
 }
 `;
