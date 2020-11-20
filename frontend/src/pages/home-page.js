@@ -172,324 +172,324 @@ class HomePage extends PageDM {
                         <p>A continuación se muestran todos los símbolos.</p>
                     </div>
                 </div>
+                <ul>
+                    <li>
+                        <div class="cell">
+                            <xamix-element class="construction v" textInput="sel-ti-ka-kis-me'">
+                                <span slot="after">/</span>
+                                <span slot="after">V: vocal grande</span>
+                            </xamix-element>
+                            <table class="letters" slot="after">
+                                <tr>
+                                    <td>
+                                        <xamix-element class="letters construction v" textInput="a"></xamix-element>
+                                        <br />
+                                        <span>a</span>
+                                        <br />
+                                        <span>/a/</span>
+                                    </td>
+                                    <td>
+                                        <xamix-element class="letters construction v" textInput="o"></xamix-element>
+                                        <br />
+                                        <span>o</span>
+                                        <br />
+                                        <span>/o/</span>
+                                    </td>
+                                    <td>
+                                        <xamix-element class="letters construction v" textInput="i"></xamix-element>
+                                        <br />
+                                        <span>i</span>
+                                        <br />
+                                        <span>/i/</span>
+                                    </td>
+                                    <td>
+                                        <xamix-element class="letters construction v" textInput="e"></xamix-element>
+                                        <br />
+                                        <span>e</span>
+                                        <br />
+                                        <span>/e/</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="cell">
+                            <xamix-element class="construction s" textInput="e-he-ka-ton-tli">
+                                <span slot="after">/</span>
+                                <span slot="after">S: saltillo </span>
+                            </xamix-element>
+                            <table class="letters" slot="after">
+                                <tr>
+                                    <td>
+                                        <xamix-element class="letters construction s" textInput="'1"></xamix-element>
+                                        <br />
+                                        <span>'</span>
+                                        <br />
+                                        <span>/ʔ/</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="cell">
+                            <xamix-element class="construction a" textInput="we-yak-me'">
+                                <span slot="after">/</span>
+                                <span slot="after">A: acento </span>
+                            </xamix-element>
+                            <table class="letters" slot="after">
+                                <tr>
+                                    <td>
+                                        <xamix-element class="letters construction a" textInput="!1"></xamix-element>
+                                        <br />
+                                        <span>:</span>
+                                        <br />
+                                        <span>/:/</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="cell">
+                            <xamix-element class="construction" textInput="mo-kaw-tli">
+                                <span slot="after">/</span>
+                                <span slot="after">~: sin vocal</span>
+                            </xamix-element>
+                            <table class="letters" slot="after">
+                                <tr>
+                                    <td>
+                                        <xamix-element class="letters construction" textInput="~1"></xamix-element>
+                                        <br />
+                                        <span>~</span>
+                                        <br />
+                                        <span>/∅/</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <xamix-element class="construction k" textInput="i-ka-kis-me'">
+                            <span slot="after">/</span>
+                            <span slot="after">K: consonante </span>
+                        </xamix-element>
+                        <table class="chart letters" slot="after">
+                            <tr>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="ma"></xamix-element>
+                                    <br />
+                                    <span>ma</span>
+                                    <br />
+                                    <span>/ma/</span>
+                                </td>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="na"></xamix-element>
+                                    <br />
+                                    <span>na</span>
+                                    <br />
+                                    <span>/na/</span>
+                                </td>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="pa"></xamix-element>
+                                    <br />
+                                    <span>pa</span>
+                                    <br />
+                                    <span>/pa/</span>
+                                </td>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="ta"></xamix-element>
+                                    <br />
+                                    <span>ta</span>
+                                    <br />
+                                    <span>/ta/</span>
+                                </td>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="tla"></xamix-element>
+                                    <br />
+                                    <span>tla</span>
+                                    <br />
+                                    <span>/t͡ɬa/</span>
+                                </td>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="xa"></xamix-element>
+                                    <br />
+                                    <span>xa</span>
+                                    <br />
+                                    <span>/ʃa/</span>
+                                </td>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="ca"></xamix-element>
+                                    <br />
+                                    <span>cha</span>
+                                    <br />
+                                    <span>/t͡ʃa/</span>
+                                </td>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="sa"></xamix-element>
+                                    <br />
+                                    <span>sa</span>
+                                    <br />
+                                    <span>/sa/</span>
+                                </td>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="za"></xamix-element>
+                                    <br />
+                                    <span>tsa</span>
+                                    <br />
+                                    <span>/t͡sa/</span>
+                                </td>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="ka"></xamix-element>
+                                    <br />
+                                    <span>ka</span>
+                                    <br />
+                                    <span>/ka/</span>
+                                </td>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="qa"></xamix-element>
+                                    <br />
+                                    <span>kwa</span>
+                                    <br />
+                                    <span>/kʷa/</span>
+                                </td>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="ha"></xamix-element>
+                                    <br />
+                                    <span>ha</span>
+                                    <br />
+                                    <span>/ha/</span>
+                                </td>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="la"></xamix-element>
+                                    <br />
+                                    <span>la</span>
+                                    <br />
+                                    <span>/la/</span>
+                                </td>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="wa"></xamix-element>
+                                    <br />
+                                    <span>wa</span>
+                                    <br />
+                                    <span>/wa/</span>
+                                </td>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="ya"></xamix-element>
+                                    <br />
+                                    <span>ya</span>
+                                    <br />
+                                    <span>/ya/</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <div class="cell">
+                            <xamix-element class="construction b" textInput="sel-ti-ka-kis-to-ton-tin">
+                                <span slot="after">/</span>
+                                <span slot="after">B: vocal chica </span>
+                            </xamix-element>
+                            <table class="chart letters" slot="after">
+                                <tr>
+                                    <td>
+                                        <xamix-element class="letters construction b" textInput="_o1"></xamix-element>
+                                        <br />
+                                        <span>o</span>
+                                        <br />
+                                        <span>/o/</span>
+                                    </td>
+                                    <td>
+                                        <xamix-element class="letters construction b" textInput="_i1"></xamix-element>
+                                        <br />
+                                        <span>i</span>
+                                        <br />
+                                        <span>/i/</span>
+                                    </td>
+                                    <td>
+                                        <xamix-element class="letters construction b" textInput="_e1"></xamix-element>
+                                        <br />
+                                        <span>e</span>
+                                        <br />
+                                        <span>/e/</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="cell">
+                            <xamix-element class="construction" textInput="ma-ci-o-tlil-te-me'">
+                                <span slot="after">/</span>
+                                <span slot="after">puntuación </span>
+                            </xamix-element>
+                            <table class="chart letters" slot="after">
+                                <tr>
+                                    <td>
+                                        <xamix-element class="letters construction" textInput="zikoalistli1">
+                                        </xamix-element>
+                                        <br />
+                                        <span>|,|</span>
+                                    </td>
+                                    <td>
+                                        <xamix-element class="letters construction" textInput="zikoalistli2">
+                                        </xamix-element>
+                                        <br />
+                                        <span>|;|</span>
+                                    </td>
+                                    <td>
+                                        <xamix-element class="letters construction" textInput="tlamilistli">
+                                        </xamix-element>
+                                        <br />
+                                        <span>|:|</span>
+                                    </td>
+                                    <td>
+                                        <xamix-element class="letters construction" textInput="nimanilistli">
+                                        </xamix-element>
+                                        <br />
+                                        <span>|...|</span>
+                                    </td>
+                                    <td>
+                                        <xamix-element class="letters construction" textInput="tlanesemixnawalistli">
+                                        </xamix-element>
+                                        <br />
+                                        <span>|:|</span>
+                                    </td>
+                                    <td>
+                                        <xamix-element class="letters construction" textInput="tlanesemixnawalistli">
+                                        </xamix-element>
+                                        <br />
+                                        <span>|:|</span>
+                                    </td>
+                                    <td>
+                                        <xamix-element class="letters construction" textInput="mawkazalistli">
+                                        </xamix-element>
+                                        <br />
+                                        <span>|!|</span>
+                                    </td>
+                                    <td>
+                                        <xamix-element class="letters construction" textInput="tetlanilistli">
+                                        </xamix-element>
+                                        <br />
+                                        <span>|?|</span>
+                                    </td>
+                                    <td>
+                                        <xamix-element class="letters" textInput="kaxtli1ha-_-kaxtli1hb ">
+                                        </xamix-element>
+                                        <br />
+                                        <span>[ ]</span>
+                                    </td>
+                                    <td>
+                                        <xamix-element class="letters" textInput="kaxtli2ha-_-kaxtli2hb ">
+                                        </xamix-element>
+                                        <br />
+                                        <span>( )</span>
+                                    </td>
+                                    <td>
+                                        <xamix-element class="letters" textInput="kaxtli3ha-_-kaxtli3hb ">
+                                        </xamix-element>
+                                        <br />
+                                        <span>{ }</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <ul>
-                <li>
-                    <div class="cell">
-                        <xamix-element class="construction v" textInput="sel-ti-ka-kis-me'">
-                            <span slot="after">/</span>
-                            <span slot="after">V: vocal grande</span>
-                        </xamix-element>
-                        <table class="chart letters" slot="after">
-                            <tr>
-                                <td>
-                                    <xamix-element class="letters construction v" textInput="a"></xamix-element>
-                                    <br />
-                                    <span>a</span>
-                                    <br />
-                                    <span>/a/</span>
-                                </td>
-                                <td>
-                                    <xamix-element class="letters construction v" textInput="o"></xamix-element>
-                                    <br />
-                                    <span>o</span>
-                                    <br />
-                                    <span>/o/</span>
-                                </td>
-                                <td>
-                                    <xamix-element class="letters construction v" textInput="i"></xamix-element>
-                                    <br />
-                                    <span>i</span>
-                                    <br />
-                                    <span>/i/</span>
-                                </td>
-                                <td>
-                                    <xamix-element class="letters construction v" textInput="e"></xamix-element>
-                                    <br />
-                                    <span>e</span>
-                                    <br />
-                                    <span>/e/</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="cell">
-                        <xamix-element class="construction s" textInput="e-he-ka-ton-tli">
-                            <span slot="after">/</span>
-                            <span slot="after">S: saltillo </span>
-                        </xamix-element>
-                        <table class="chart letters" slot="after">
-                            <tr>
-                                <td>
-                                    <xamix-element class="letters construction s" textInput="'1"></xamix-element>
-                                    <br />
-                                    <span>'</span>
-                                    <br />
-                                    <span>/ʔ/</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="cell">
-                        <xamix-element class="construction a" textInput="we-yak-me'">
-                            <span slot="after">/</span>
-                            <span slot="after">A: acento </span>
-                        </xamix-element>
-                        <table class="chart letters" slot="after">
-                            <tr>
-                                <td>
-                                    <xamix-element class="letters construction a" textInput="!1"></xamix-element>
-                                    <br />
-                                    <span>:</span>
-                                    <br />
-                                    <span>/:/</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="cell">
-                        <xamix-element class="construction" textInput="mo-kaw-tli">
-                            <span slot="after">/</span>
-                            <span slot="after">~: sin vocal</span>
-                        </xamix-element>
-                        <table class="chart letters" slot="after">
-                            <tr>
-                                <td>
-                                    <xamix-element class="letters construction" textInput="~1"></xamix-element>
-                                    <br />
-                                    <span>~</span>
-                                    <br />
-                                    <span>/∅/</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </li>
-                <li>
-                    <xamix-element class="construction k" textInput="i-ka-kis-me'">
-                        <span slot="after">/</span>
-                        <span slot="after">K: consonante </span>
-                    </xamix-element>
-                    <table class="chart letters" slot="after">
-                        <tr>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="ma"></xamix-element>
-                                <br />
-                                <span>ma</span>
-                                <br />
-                                <span>/ma/</span>
-                            </td>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="na"></xamix-element>
-                                <br />
-                                <span>na</span>
-                                <br />
-                                <span>/na/</span>
-                            </td>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="pa"></xamix-element>
-                                <br />
-                                <span>pa</span>
-                                <br />
-                                <span>/pa/</span>
-                            </td>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="ta"></xamix-element>
-                                <br />
-                                <span>ta</span>
-                                <br />
-                                <span>/ta/</span>
-                            </td>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="tla"></xamix-element>
-                                <br />
-                                <span>tla</span>
-                                <br />
-                                <span>/t͡ɬa/</span>
-                            </td>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="xa"></xamix-element>
-                                <br />
-                                <span>xa</span>
-                                <br />
-                                <span>/ʃa/</span>
-                            </td>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="ca"></xamix-element>
-                                <br />
-                                <span>cha</span>
-                                <br />
-                                <span>/t͡ʃa/</span>
-                            </td>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="sa"></xamix-element>
-                                <br />
-                                <span>sa</span>
-                                <br />
-                                <span>/sa/</span>
-                            </td>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="za"></xamix-element>
-                                <br />
-                                <span>tsa</span>
-                                <br />
-                                <span>/t͡sa/</span>
-                            </td>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="ka"></xamix-element>
-                                <br />
-                                <span>ka</span>
-                                <br />
-                                <span>/ka/</span>
-                            </td>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="qa"></xamix-element>
-                                <br />
-                                <span>kwa</span>
-                                <br />
-                                <span>/kʷa/</span>
-                            </td>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="ha"></xamix-element>
-                                <br />
-                                <span>ha</span>
-                                <br />
-                                <span>/ha/</span>
-                            </td>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="la"></xamix-element>
-                                <br />
-                                <span>la</span>
-                                <br />
-                                <span>/la/</span>
-                            </td>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="wa"></xamix-element>
-                                <br />
-                                <span>wa</span>
-                                <br />
-                                <span>/wa/</span>
-                            </td>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="ya"></xamix-element>
-                                <br />
-                                <span>ya</span>
-                                <br />
-                                <span>/ya/</span>
-                            </td>
-                        </tr>
-                    </table>
-                </li>
-                <li>
-                    <div class="cell">
-                        <xamix-element class="construction b" textInput="sel-ti-ka-kis-to-ton-tin">
-                            <span slot="after">/</span>
-                            <span slot="after">B: vocal chica </span>
-                        </xamix-element>
-                        <table class="chart letters" slot="after">
-                            <tr>
-                                <td>
-                                    <xamix-element class="letters construction b" textInput="_o1"></xamix-element>
-                                    <br />
-                                    <span>o</span>
-                                    <br />
-                                    <span>/o/</span>
-                                </td>
-                                <td>
-                                    <xamix-element class="letters construction b" textInput="_i1"></xamix-element>
-                                    <br />
-                                    <span>i</span>
-                                    <br />
-                                    <span>/i/</span>
-                                </td>
-                                <td>
-                                    <xamix-element class="letters construction b" textInput="_e1"></xamix-element>
-                                    <br />
-                                    <span>e</span>
-                                    <br />
-                                    <span>/e/</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="cell">
-                        <xamix-element class="construction" textInput="ma-ci-o-tlil-te-me'">
-                            <span slot="after">/</span>
-                            <span slot="after">puntuación </span>
-                        </xamix-element>
-                        <table class="chart letters" slot="after">
-                            <tr>
-                                <td>
-                                    <xamix-element class="letters construction" textInput="zikoalistli1">
-                                    </xamix-element>
-                                    <br />
-                                    <span>|,|</span>
-                                </td>
-                                <td>
-                                    <xamix-element class="letters construction" textInput="zikoalistli2">
-                                    </xamix-element>
-                                    <br />
-                                    <span>|;|</span>
-                                </td>
-                                <td>
-                                    <xamix-element class="letters construction" textInput="tlamilistli">
-                                    </xamix-element>
-                                    <br />
-                                    <span>|:|</span>
-                                </td>
-                                <td>
-                                    <xamix-element class="letters construction" textInput="nimanilistli">
-                                    </xamix-element>
-                                    <br />
-                                    <span>|...|</span>
-                                </td>
-                                <td>
-                                    <xamix-element class="letters construction" textInput="tlanesemixnawalistli">
-                                    </xamix-element>
-                                    <br />
-                                    <span>|:|</span>
-                                </td>
-                                <td>
-                                    <xamix-element class="letters construction" textInput="tlanesemixnawalistli">
-                                    </xamix-element>
-                                    <br />
-                                    <span>|:|</span>
-                                </td>
-                                <td>
-                                    <xamix-element class="letters construction" textInput="mawkazalistli">
-                                    </xamix-element>
-                                    <br />
-                                    <span>|!|</span>
-                                </td>
-                                <td>
-                                    <xamix-element class="letters construction" textInput="tetlanilistli">
-                                    </xamix-element>
-                                    <br />
-                                    <span>|?|</span>
-                                </td>
-                                <td>
-                                    <xamix-element class="letters" textInput="kaxtli1ha-_-kaxtli1hb ">
-                                    </xamix-element>
-                                    <br />
-                                    <span>[ ]</span>
-                                </td>
-                                <td>
-                                    <xamix-element class="letters" textInput="kaxtli2ha-_-kaxtli2hb ">
-                                    </xamix-element>
-                                    <br />
-                                    <span>( )</span>
-                                </td>
-                                <td>
-                                    <xamix-element class="letters" textInput="kaxtli3ha-_-kaxtli3hb ">
-                                    </xamix-element>
-                                    <br />
-                                    <span>{ }</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </li>
-            </ul>
             <br />
             <div class="tri-set top justify">
                 <div class="container">
@@ -522,7 +522,8 @@ class HomePage extends PageDM {
                     <div class="body">
                         <p>In xamixmachiotla'tollolistli motla'kwilo:</p>
                         <ul>
-                            <li>yakanaiwikpa oponechnawak pampa kiixmati tsalan oksekintin Ixachitlan imachiotla'tolloliswan.</li>
+                            <li>yakanaiwikpa oponechnawak pampa kiixmati tsalan oksekintin Ixachitlan imachiotla'tolloliswan.
+                            </li>
                             <li>nechikolchiwa'tok xamixtew pampa kipalewia tla'tolpowa melawak achi ayowika.</li>
                         </ul>
                         <p>Niman moi'titi kenin nechikolchiwas.</p>
@@ -551,7 +552,7 @@ class HomePage extends PageDM {
                         </div>
                     </div>
                 </div>
-                <table class="chart">
+                <table class="construction">
                     <tr>
                         <th>
                             <xamix-element textInput="i-sel">
@@ -723,6 +724,9 @@ class HomePage extends PageDM {
                         </td>
                     </tr>
                 </table>
+                <div id="elements-div" class="center">
+                    <img id="elements-svg" src="/images/construction_elements/elements.svg" />
+                </div>
             </div>
             <div class="tri-set top justify">
                 <div class="container">
@@ -752,132 +756,132 @@ class HomePage extends PageDM {
                         <p>Hay carateres adicionales para los sonidos extranjeros, a continuación se muestran todos ellos.</p>
                     </div>
                 </div>
+                <ul>
+                    <li>
+                        <div class="cell">
+                            <xamix-element class="construction v" textInput="sel-ti-ka-kis-me'">
+                                <span slot="after">/</span>
+                                <span slot="after">V: vocal grande</span>
+                            </xamix-element>
+                            <table class="letters" slot="after">
+                                <tr>
+                                    <td>
+                                        <xamix-element class="letters construction v" textInput="u"></xamix-element>
+                                        <br />
+                                        <span>u</span>
+                                        <br />
+                                        <span>/u/</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="cell">
+                            <xamix-element class="construction b" textInput="sel-ti-ka-kis-to-ton-tin">
+                                <span slot="after">/</span>
+                                <span slot="after">B: vocal chica </span>
+                            </xamix-element>
+                            <table class="letters" slot="after">
+                                <tr>
+                                    <td>
+                                        <xamix-element class="letters construction b" textInput="_u1"></xamix-element>
+                                        <br />
+                                        <span>u</span>
+                                        <br />
+                                        <span>/u/</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <xamix-element class="construction k" textInput="i-ka-kis-me'">
+                            <span slot="after">/</span>
+                            <span slot="after">K: consonante </span>
+                        </xamix-element>
+                        <table class="letters" slot="after">
+                            <tr>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="ba"></xamix-element>
+                                    <br />
+                                    <span>ba</span>
+                                    <br />
+                                    <span>/ba/</span>
+                                </td>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="da"></xamix-element>
+                                    <br />
+                                    <span>da</span>
+                                    <br />
+                                    <span>/da/</span>
+                                </td>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="fa"></xamix-element>
+                                    <br />
+                                    <span>fa</span>
+                                    <br />
+                                    <span>/fa/</span>
+                                </td>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="ga"></xamix-element>
+                                    <br />
+                                    <span>ga</span>
+                                    <br />
+                                    <span>/ga/</span>
+                                </td>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="kha"></xamix-element>
+                                    <br />
+                                    <span>kha</span>
+                                    <br />
+                                    <span>/xa/</span>
+                                </td>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="ja"></xamix-element>
+                                    <br />
+                                    <span>ja</span>
+                                    <br />
+                                    <span>/d͡ʒa/</span>
+                                </td>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="ra"></xamix-element>
+                                    <br />
+                                    <span>ra</span>
+                                    <br />
+                                    <span>/ra/</span>
+                                </td>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="z'a"></xamix-element>
+                                    <br />
+                                    <span>za</span>
+                                    <br />
+                                    <span>/za/</span>
+                                </td>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="va"></xamix-element>
+                                    <br />
+                                    <span>va</span>
+                                    <br />
+                                    <span>/va/</span>
+                                </td>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="ksa"></xamix-element>
+                                    <br />
+                                    <span>ksa</span>
+                                    <br />
+                                    <span>/ksa/</span>
+                                </td>
+                                <td>
+                                    <xamix-element class="letters construction k" textInput="nya"></xamix-element>
+                                    <br />
+                                    <span>nya/ña/nga</span>
+                                    <br />
+                                    <span>/ɲa/</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
             </div>
-            <ul>
-                <li>
-                    <xamix-element class="construction k" textInput="i-ka-kis-me'">
-                        <span slot="after">/</span>
-                        <span slot="after">K: consonante </span>
-                    </xamix-element>
-                    <table class="chart letters" slot="after">
-                        <tr>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="ba"></xamix-element>
-                                <br />
-                                <span>ba</span>
-                                <br />
-                                <span>/ba/</span>
-                            </td>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="da"></xamix-element>
-                                <br />
-                                <span>da</span>
-                                <br />
-                                <span>/da/</span>
-                            </td>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="fa"></xamix-element>
-                                <br />
-                                <span>fa</span>
-                                <br />
-                                <span>/fa/</span>
-                            </td>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="ga"></xamix-element>
-                                <br />
-                                <span>ga</span>
-                                <br />
-                                <span>/ga/</span>
-                            </td>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="kha"></xamix-element>
-                                <br />
-                                <span>kha</span>
-                                <br />
-                                <span>/xa/</span>
-                            </td>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="ja"></xamix-element>
-                                <br />
-                                <span>ja</span>
-                                <br />
-                                <span>/d͡ʒa/</span>
-                            </td>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="ra"></xamix-element>
-                                <br />
-                                <span>ra</span>
-                                <br />
-                                <span>/ra/</span>
-                            </td>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="z'a"></xamix-element>
-                                <br />
-                                <span>za</span>
-                                <br />
-                                <span>/za/</span>
-                            </td>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="va"></xamix-element>
-                                <br />
-                                <span>va</span>
-                                <br />
-                                <span>/va/</span>
-                            </td>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="ksa"></xamix-element>
-                                <br />
-                                <span>ksa</span>
-                                <br />
-                                <span>/ksa/</span>
-                            </td>
-                            <td>
-                                <xamix-element class="letters construction k" textInput="nya"></xamix-element>
-                                <br />
-                                <span>nya/ña/nga</span>
-                                <br />
-                                <span>/ɲa/</span>
-                            </td>
-                        </tr>
-                    </table>
-                </li>
-                <li>
-                    <div class="cell">
-                        <xamix-element class="construction v" textInput="sel-ti-ka-kis-me'">
-                            <span slot="after">/</span>
-                            <span slot="after">V: vocal grande</span>
-                        </xamix-element>
-                        <table class="chart letters" slot="after">
-                            <tr>
-                                <td>
-                                    <xamix-element class="letters construction v" textInput="u"></xamix-element>
-                                    <br />
-                                    <span>u</span>
-                                    <br />
-                                    <span>/u/</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="cell">
-                        <xamix-element class="construction b" textInput="sel-ti-ka-kis-to-ton-tin">
-                            <span slot="after">/</span>
-                            <span slot="after">B: vocal chica </span>
-                        </xamix-element>
-                        <table class="chart letters" slot="after">
-                            <tr>
-                                <td>
-                                    <xamix-element class="letters construction b" textInput="_u1"></xamix-element>
-                                    <br />
-                                    <span>u</span>
-                                    <br />
-                                    <span>/u/</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </li>
-            </ul>
         </section>
         `;
     }
