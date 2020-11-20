@@ -308,47 +308,37 @@ span.colored-xamix>span.latin {
     font-size: 1.5vw;
 }
 
-#foreign-chart1>div.row>div.cell>* {
-    font-size: 2vw;
-}
-
 #example1 {
     padding-bottom: 2vw;
 }
 
-table#constructionchart>tr>* {
-    border: 3px solid black;
-    border-radius: 10px;
-    border-collapse: collapse;
+table.construction {
+    margin-bottom: 3vw;
+    margin-right: 8vw;
+    max-width: 80vw;
 }
 
-table#constructionchart>tr>td,
-table#constructionchart>tr>td>* {
-    direction: ltr;
-}
-
-#constructionchart>tr>td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    background-color: #f00;
-}
-
-table,
-th,
-td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-th,
-td {
+table.construction,
+table.construction>tbody>tr>td,
+table.construction>tbody>tr>th,
+table.letters,
+table.letters>tbody>tr>td,
+table.letters>tbody>tr>th {
     padding: 1vw;
-}
-
-td {
-    direction: ltr;
+    border: 3px solid black;
+    border-collapse: collapse;
     text-align: center;
     vertical-align: bottom;
+}
+
+table.construction>tbody>tr>th>xamix-element>span,
+table.letters>tbody>tr>th>xamix-element>span {
+    font-size: 1.5vw;
+    font-weight: normal;
+}
+table.construction>tbody>tr>td,
+table.letters>tbody>tr>td {
+    direction: ltr;
 }
 
 img {
@@ -403,5 +393,13 @@ xamix-element.construction>* {
 
 .chart,.chart>*,.chart>*>*,.chart>*>*>* {
     font-size: 2vw;
+}
+
+img#elements-svg {
+    width: 50%;
+}
+
+div#elements-div {
+    text-align: center;
 }
 `;
