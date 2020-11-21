@@ -336,6 +336,12 @@ table.letters>tbody>tr>th>xamix-element>span {
     font-size: 1.5vw;
     font-weight: normal;
 }
+
+table.letters>tbody>tr>td>span {
+    font-size: 2vw;
+    font-weight: normal;
+}
+
 table.construction>tbody>tr>td,
 table.letters>tbody>tr>td {
     direction: ltr;
