@@ -40,10 +40,6 @@ class XamixInfo extends LitElement {
             .main-app.out {
                 animation: ${this._config.transition.type}TransitionPage ${this._config.transition.delay / 1000}s;
             }
-
-            main-role {
-                max-height: 80vh;
-            }
         </style>
         <header class="header-app">
             <div class="title container-app">
