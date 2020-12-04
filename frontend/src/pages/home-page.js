@@ -1,89 +1,166 @@
 import { html } from "lit-element";
 import { PageDM } from "../utils/page-dm.js";
 
+import "@polymer/paper-checkbox/paper-checkbox.js";
+import "@polymer/paper-input/paper-input.js";
+import "@polymer/paper-card/paper-card.js";
+
 import { styles } from "../xamix-info-styles.js";
 
 class HomePage extends PageDM {
-    static get styles() {
-        return styles;
+  static get styles() {
+    return styles;
+  }
+
+  static get properties() {
+    return {
+      testVertical: {
+        type: Boolean,
+        reflect: true,
+      },
+      testInput: {
+        type: String,
+        reflect: true,
+      },
+    };
+  }
+
+  constructor() {
+    super();
+    this.testVertical = false;
+    this.testInput = this.formatPunctuation(
+      `qal-li-zikoalistli1 _ in _ "-xa-mix-tla'-qi-lo-lis-tli-" _ ka _ sen-ka _ ma-wi-so!l-li-mawkazalistli`
+    );
+  }
+
+  formatPunctuation(text = "") {
+    text = text
+      .replace(/,/g, "zikoalistli1")
+      .replace(/;/g, "zikoalistli2")
+      .replace(/\.\.\./g, "nimanilistli")
+      .replace(/\./g, "tlamilistli")
+      .replace(/:/g, "tlanesemixnawalistli")
+      .replace(/!!/g, "mawkazalistli")
+      .replace(/\?/g, "tetlanilistli")
+      .replace(/\[/g, `kaxtli1${this.testVertical ? "v" : "h"}a`)
+      .replace(/\]/g, `kaxtli1${this.testVertical ? "v" : "h"}b`)
+      .replace(/\(/g, `kaxtli2${this.testVertical ? "v" : "h"}a`)
+      .replace(/\)/g, `kaxtli2${this.testVertical ? "v" : "h"}b`)
+      .replace(/\{/g, `kaxtli3${this.testVertical ? "v" : "h"}a`)
+      .replace(/\}/g, `kaxtli3${this.testVertical ? "v" : "h"}b`);
+
+    return this.formatQuotes(text);
+  }
+
+  formatQuotes(text) {
+    const matches = text.match(/"/g);
+
+    if (matches) {
+      const times = Math.floor(matches.length / 2);
+      const openingQuote = "sasanili1a";
+      const closingQuote = "sasanili1b";
+
+      String.prototype.replaceAt = function (index, replacement) {
+        return this.substr(0, index) + replacement + this.substr(index + 1);
+      };
+
+      for (let i = 0; i < times; i++) {
+        const quoteA = text.indexOf(`"`);
+        text = text.replaceAt(quoteA, openingQuote);
+        const quoteB = text.indexOf(`"`);
+        text = text.replaceAt(quoteB, closingQuote);
+      }
     }
 
-    setElementsAttribute(elements, attributes) {
-        for (const element of elements) {
-            for (const attribute of attributes) {
-                element.setAttribute(attribute.name, attribute.value || "");
-            }
-        }
+    return text;
+  }
+
+  setTestInput(e) {
+    this.testInput = this.formatPunctuation(e.target.value);
+    const testXamix = this.shadowRoot.querySelector("xamix-element#test-input");
+    testXamix.textInput = this.testInput;
+  }
+
+  isTestVertical(e) {
+    this.testVertical = e.target.checked;
+  }
+
+  setElementsAttribute(elements, attributes) {
+    for (const element of elements) {
+      for (const attribute of attributes) {
+        element.setAttribute(attribute.name, attribute.value || "");
+      }
     }
+  }
 
-    updated(_changedProperties) {
-        super.updated(_changedProperties);
+  updated(_changedProperties) {
+    super.updated(_changedProperties);
 
-        const allXamixElements = this.shadowRoot.querySelectorAll("xamix-element");
-        const bodyXamixElements = this.shadowRoot.querySelectorAll(
-            ".body>xamix-element,.body>*>*>xamix-element,.body>*>*>*>xamix-element"
-        );
-        const headerXamixElements = this.shadowRoot.querySelectorAll(
-            ".header>xamix-element"
-        );
-        const constructionXamixElements = this.shadowRoot.querySelectorAll(
-            "xamix-element.construction"
-        );
-        const lettersXamixElements = this.shadowRoot.querySelectorAll(
-            "xamix-element.letters"
-        );
+    const allXamixElements = this.shadowRoot.querySelectorAll("xamix-element");
+    const bodyXamixElements = this.shadowRoot.querySelectorAll(
+      ".body>xamix-element,.body>*>*>xamix-element,.body>*>*>*>xamix-element"
+    );
+    const headerXamixElements = this.shadowRoot.querySelectorAll(
+      ".header>xamix-element"
+    );
+    const constructionXamixElements = this.shadowRoot.querySelectorAll(
+      "xamix-element.construction"
+    );
+    const lettersXamixElements = this.shadowRoot.querySelectorAll(
+      "xamix-element.letters"
+    );
 
-        this.setElementsAttribute(allXamixElements, [
-            {
-                name: "root",
-                value: ".././node_modules/xamix-element/",
-            },
-            {
-                name: "bold",
-            },
-            {
-                name: "adaptable",
-            },
-        ]);
+    this.setElementsAttribute(allXamixElements, [
+      {
+        name: "root",
+        value: ".././node_modules/xamix-element/",
+      },
+      {
+        name: "bold",
+      },
+      {
+        name: "adaptable",
+      },
+    ]);
 
-        this.setElementsAttribute(bodyXamixElements, [
-            {
-                name: "fontSize",
-                value: document.body.clientWidth > 600 ? "2" : "3",
-            },
-        ]);
+    this.setElementsAttribute(bodyXamixElements, [
+      {
+        name: "fontSize",
+        value: document.body.clientWidth > 600 ? "2" : "3",
+      },
+    ]);
 
-        this.setElementsAttribute(headerXamixElements, [
-            {
-                name: "fontSize",
-                value: document.body.clientWidth > 600 ? "3" : "5",
-            },
-        ]);
+    this.setElementsAttribute(headerXamixElements, [
+      {
+        name: "fontSize",
+        value: document.body.clientWidth > 600 ? "3" : "5",
+      },
+    ]);
 
-        this.setElementsAttribute(constructionXamixElements, [
-            {
-                name: "fontSize",
-                value: document.body.clientWidth > 600 ? "3" : "5",
-            },
-        ]);
+    this.setElementsAttribute(constructionXamixElements, [
+      {
+        name: "fontSize",
+        value: document.body.clientWidth > 600 ? "3" : "5",
+      },
+    ]);
 
-        this.setElementsAttribute(lettersXamixElements, [
-            {
-                name: "fontSize",
-                value: 5,
-            },
-        ]);
-    }
+    this.setElementsAttribute(lettersXamixElements, [
+      {
+        name: "fontSize",
+        value: 5,
+      },
+    ]);
+  }
 
-    render() {
-        const links = [
-            {
-                wordsIndexes: [25, 26, 27],
-                href: "https://unifont.org/nahuatl/",
-            },
-        ];
+  render() {
+    const links = [
+      {
+        wordsIndexes: [25, 26, 27],
+        href: "https://unifont.org/nahuatl/",
+      },
+    ];
 
-        return html`
+    return html`
         <section class="principal-container">
             <div class="tri-set top justify">
                 <div class="container">
@@ -434,19 +511,13 @@ class HomePage extends PageDM {
                                         <xamix-element class="letters construction" textInput="tlamilistli">
                                         </xamix-element>
                                         <br />
-                                        <span>|:|</span>
+                                        <span>|.|</span>
                                     </td>
                                     <td>
                                         <xamix-element class="letters construction" textInput="nimanilistli">
                                         </xamix-element>
                                         <br />
                                         <span>|...|</span>
-                                    </td>
-                                    <td>
-                                        <xamix-element class="letters construction" textInput="tlanesemixnawalistli">
-                                        </xamix-element>
-                                        <br />
-                                        <span>|:|</span>
                                     </td>
                                     <td>
                                         <xamix-element class="letters construction" textInput="tlanesemixnawalistli">
@@ -882,9 +953,65 @@ class HomePage extends PageDM {
                     </li>
                 </ul>
             </div>
+            <div class="tri-set top justify">
+                <div class="container">
+                    <div class="header">
+                        <xamix-element class="title" textInput="xik-ye-ye-ko-a-mawkazalistli"></xamix-element>
+                    </div>
+                    <div class="body horizontal">
+                        <xamix-element
+                            textInput="ax-kan _ ti-we-li-ti _ tik-ye-ye-ko-a _ in _ xa-mix-tla'-qi-lo-lis-tli-tlanesemixnawalistli">
+                        </xamix-element>
+                    </div>
+                </div>
+                <div class="container latin">
+                    <div class="header">
+                        <h2>Xikyeyekoa!</h2>
+                    </div>
+                    <div class="body">
+                        <p>Axkan tiweliti tikyeyekoa in xamixtla'kwilolistli!</p>
+                    </div>
+                </div>
+                <br />
+                <div class="container latin center">
+                    <div class="header">
+                        <h2>Pruébalo!</h2>
+                    </div>
+                    <div class="body">
+                        <p>Ahora puedes probar la escritura xamix!</p>
+                        <paper-card id="test-example" class="header">
+                            <p>Kwalli', in "Xamixtla'kwilolistli" ka senka mawisōlli!</p>
+                            <p>↓</p>
+                            <p>qal-li-, _ in _ "-xa-mix-tla'-qi-lo-lis-tli-" _ ka _ sen-ka _ ma-wi-so!l-li-!!</p>
+                        </paper-card>
+                    </div>
+                </div>
+                <div class="latin center">
+                    <paper-checkbox @change=${
+                      this.isTestVertical
+                    }>Vertical?</paper-checkbox>
+                    <paper-input class="container latin" @change=${
+                      this.setTestInput
+                    } value="${this.testInput}"></paper-input>
+                </div>
+                <paper-card id="test">
+                    ${
+                      this.testVertical
+                        ? html`<xamix-element
+                            id="test-input"
+                            vertical
+                            textInput="${this.testInput}"
+                          ></xamix-element>`
+                        : html`<xamix-element
+                            id="test-input"
+                            textInput="${this.testInput}"
+                          ></xamix-element>`
+                    }
+                </paper-card>
+            </div>
         </section>
         `;
-    }
+  }
 }
 
 window.customElements.define("home-page", HomePage);
