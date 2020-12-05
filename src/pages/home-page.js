@@ -987,12 +987,12 @@ class HomePage extends PageDM {
                     </div>
                 </div>
                 <div class="latin center">
-                    <paper-checkbox @change=${
+                    <paper-checkbox @change="${
                       this.isTestVertical
-                    }>Vertical?</paper-checkbox>
-                    <paper-input class="container latin" @change=${
+                    }">Vertical?</paper-checkbox>
+                    <paper-input class="container latin" @change="${
                       this.setTestInput
-                    } value="${this.testInput}"></paper-input>
+                    }" value="${this.testInput}"></paper-input>
                 </div>
                 <paper-card id="test">
                     ${
